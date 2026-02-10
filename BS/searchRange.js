@@ -53,4 +53,4 @@ var searchRange = function (nums, target) {
 
 }
 
-console.log(searchRange([1, 2, 2, 2, 3, 3, 3, 3, 4], 0));
+console.log(searchRange([1, 2, 2, 2, 3, 3, 3, 3, 4], 4));
