@@ -12,9 +12,9 @@ function RotatedSortedArray(arr, target) {
         if (arr[mid] == target) {
             return true;
         }
-        if(arr[low]==arr[mid] && arr[mid] == arr[high]){
-            low = low+1;
-            high = high-1;
+        if (arr[low] == arr[mid] && arr[mid] == arr[high]) {
+            low = low + 1;
+            high = high - 1;
             continue;
         }
         if (arr[low] <= arr[mid]) {
@@ -23,7 +23,7 @@ function RotatedSortedArray(arr, target) {
             else
                 low = mid + 1;
         }
-        else{
+        else {
             if (arr[mid] <= target && target <= arr[high])
                 low = mid + 1;
             else
@@ -34,4 +34,4 @@ function RotatedSortedArray(arr, target) {
     return false;
 }
 
-console.log(RotatedSortedArray([7,8,9,1,2,3,4,5,6],6));
+console.log(RotatedSortedArray([7, 8, 9, 1, 2, 3, 4, 5, 6], 6));
