@@ -19,4 +19,4 @@ var lowerBound = function (nums, target) {
     return result;
 }
 
-console.log(lowerBound([1,2,5,5,5,6,8,9],5));
+console.log(lowerBound([0,0,0,1,1,1],1));
